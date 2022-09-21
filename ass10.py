@@ -39,7 +39,7 @@ report.close()
 import os,
 import shutil
 
-def copyfiles (targetfolder, extensions, vFolder):
+def copyfilesbyex (targetfolder, extensions, vFolder):
 	targetfolder = os.path.abspath(targetfolder)
 	vFolder = os.path.abspath(vFolder)
 	print('Looking in', folder, 'for files with extensions of', ', '.join(extensions))
@@ -54,4 +54,4 @@ def copyfiles (targetfolder, extensions, vFolder):
 extensions = ['.txt', '.pdf']
 folder = 'Folder'
 destFolder = 'targetFolder'
-selectiveCopy(targetfolder, extensions, vFolder)
+copyfilesbyex (targetfolder, extensions, vFolder)
